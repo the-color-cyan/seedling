@@ -1,0 +1,14 @@
+testdata/test_tree.md
+  h_441bd1542c405a 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7a987b0b53e1f5cd7817dfaf73287604e5b13e8a",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
