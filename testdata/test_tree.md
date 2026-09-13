@@ -1,0 +1,6 @@
+- cmd/
+  - seedling/
+    - main.go
+- internal/
+  - domain/
+    - tree.go
