@@ -1,6 +1,15 @@
-- cmd/
-  - seedling/
-    - main.go
-- internal/
-  - domain/
-    - tree.go
+- seedling/
+  - cmd/
+    - seedling/
+      - main.go
+    - astdump/
+      - main.go
+  - internal/
+    - tree/
+      - tree.go
+    - markdown/
+      - parse.go
+      - parse_test.go
+  - docs/
+  - testdata/
+    - test_tree.go
