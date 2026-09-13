@@ -6,7 +6,12 @@ import (
 	"seedling/internal/markdown"
 )
 
-const testPath = "testdata/test_tree.md"
+const header string = `
+	|-----------|
+	|--ASTDUMP--|
+	|-----------|
+
+	`
 
 func main() {
 	if len(os.Args) != 2 {
@@ -19,8 +24,6 @@ func main() {
 		panic(err)
 	}
 
-	println("--ASTDUMP--")
-	println("-----------")
-	println()
+	println(header)
 	println(markdown.DumpAST(doc))
 }
