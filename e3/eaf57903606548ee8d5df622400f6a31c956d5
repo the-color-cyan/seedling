@@ -1,0 +1,14 @@
+cmd/astdump/main.go
+  h_441bd1542c405a 9-14,27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e3eaf57903606548ee8d5df622400f6a31c956d5",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
