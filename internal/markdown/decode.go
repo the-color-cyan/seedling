@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"seedling/internal/tree"
 
-	astquery "github.com/yuin/goldmark-astquery"
 	"github.com/yuin/goldmark/v2/ast"
 )
 
@@ -23,22 +22,18 @@ func decodeDocument(doc *Document) (tree.Tree, error) {
 }
 
 func getList(doc *Document) (*ast.List, error) {
-	listNode := astquery.Match(doc.root, doc.source,
-		astquery.ForEachDescendant(
-			astquery.Bind("lists",
-				astquery.NodeKind(ast.KindList),
-			),
-		),
-	)["lists"]
-	if len(listNode) != 1 {
+	var lists []*ast.List
+
+	for child := range doc.root.Children() {
+		if list, ok := child.(*ast.List); ok {
+			lists = append(lists, list)
+		}
+	}
+
+	if len(lists) != 1 {
 		// TODO: possibly pass file path through
-		return nil, fmt.Errorf("expected a single list, found %d", len(listNode))
+		return nil, fmt.Errorf("expected a single top-level list, found %d", len(lists))
 	}
 
-	list, ok := listNode[0].(*ast.List)
-	if !ok {
-		return nil, fmt.Errorf("expected *ast.List, got %T", listNode)
-	}
-
-	return list, nil
+	return lists[0], nil
 }
