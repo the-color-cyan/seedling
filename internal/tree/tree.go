@@ -1,15 +1,11 @@
 package tree
 
 type Node struct {
-	parent   *Node
-	children *[]Node
-	metadata NodeMetadata
-}
-
-type NodeMetadata struct {
-	kind    NodeType
-	name    string
-	comment *string
+	Kind     NodeType
+	Name     string
+	Comment  *string
+	Parent   *Node
+	Children *[]Node
 }
 
 type NodeType uint8
@@ -19,3 +15,5 @@ const (
 	KindFile
 	KindDirectory
 )
+
+type Tree []Node
