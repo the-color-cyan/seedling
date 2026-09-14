@@ -19,10 +19,12 @@ func main() {
 		os.Exit(2)
 	}
 
-	doc, err := markdown.ParseFile(os.Args[1])
+	file, err := os.ReadFile(os.Args[1])
 	if err != nil {
 		panic(err)
 	}
+
+	doc := markdown.Parse(file)
 
 	println(header)
 	println(markdown.DumpAST(doc))

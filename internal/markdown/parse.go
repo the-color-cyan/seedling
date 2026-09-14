@@ -1,7 +1,6 @@
 package markdown
 
 import (
-	"os"
 	"strings"
 
 	"github.com/yuin/goldmark/v2/ast"
@@ -13,22 +12,15 @@ type Document struct {
 	source []byte
 }
 
-func ParseFile(path string) (*Document, error) {
-	file, err := os.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
-
-	parser := parser.New()
+func Parse(src []byte) *Document {
 	return &Document{
-		root:   parser.Parse(file),
-		source: file,
-	}, nil
+		root:   parser.New().Parse(src),
+		source: src,
+	}
 }
 
 func DumpAST(doc *Document) string {
 	var sb strings.Builder
-
 	doc.root.Dump(doc.source).PrettyPrint(&sb, doc.source)
 
 	return sb.String()
