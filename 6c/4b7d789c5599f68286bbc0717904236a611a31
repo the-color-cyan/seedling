@@ -1,0 +1,14 @@
+internal/tree/tree.go
+  h_441bd1542c405a 4-8,18-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "6c4b7d789c5599f68286bbc0717904236a611a31",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
