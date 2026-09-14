@@ -1,0 +1,16 @@
+cmd/astdump/main.go
+  h_441bd1542c405a 22,27-28
+internal/markdown/parse.go
+  h_441bd1542c405a 15,17-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "990756212c8da58374358b97c713b29b876ab80d",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
