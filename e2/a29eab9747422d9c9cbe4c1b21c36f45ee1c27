@@ -1,0 +1,14 @@
+internal/markdown/decode.go
+  h_441bd1542c405a 25-30,33-35,38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e2a29eab9747422d9c9cbe4c1b21c36f45ee1c27",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
