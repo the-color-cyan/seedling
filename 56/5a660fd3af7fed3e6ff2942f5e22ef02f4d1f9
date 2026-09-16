@@ -1,0 +1,14 @@
+docs/decoding-logic.md
+  h_441bd1542c405a 1-160
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "565a660fd3af7fed3e6ff2942f5e22ef02f4d1f9",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
