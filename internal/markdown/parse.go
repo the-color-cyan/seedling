@@ -25,3 +25,8 @@ func DumpAST(doc *Document) string {
 
 	return sb.String()
 }
+
+func parseValue(value string) (name string, comment string) {
+	name, comment, _ = strings.Cut(value, "#")
+	return
+}
