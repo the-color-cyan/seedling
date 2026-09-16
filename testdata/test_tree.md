@@ -1,15 +1,10 @@
-- seedling/
+- example/
   - cmd/
-    - seedling/
-      - main.go
-    - astdump/
-      - main.go
+    - main.go
   - internal/
-    - tree/
-      - tree.go
-    - markdown/
-      - parse.go
-      - parse_test.go
+    - domain/
+      - domain.go
+      - helpers.go
   - docs/
-  - testdata/
-    - test_tree.go
+    - document.md
+  - README.md
