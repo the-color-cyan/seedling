@@ -1,0 +1,20 @@
+internal/markdown/decode.go
+  h_441bd1542c405a 4,11-15,17,20-21,26,29-118,129
+internal/markdown/decode_test.go
+  h_441bd1542c405a 1-44
+internal/markdown/parse.go
+  h_441bd1542c405a 28-32
+internal/tree/tree.go
+  h_441bd1542c405a 3-6,10,12,18,22-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3ed16ec38cb25bb2879dc0c4fac99980085eed27",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
